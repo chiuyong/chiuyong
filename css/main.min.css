@@ -250,4 +250,34 @@ a.btn-download:hover {
   padding-top: 5rem !important;
   max-width: 75rem !important;
 }
-/*style="background-color: rgb(226, 226, 226);"*/
+
+.flag {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 1rem;
+}
+
+.typing {
+  width: 14ch;
+  animation: typing 3.5s steps(30),
+    blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .9rem solid; /* The typwriter cursor */
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+.certification-option:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

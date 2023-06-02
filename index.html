@@ -31,783 +31,321 @@
 </head>
 
 <body id="page-top">
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none color-white">Chiu Yong Chang</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">Sobre mim</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experiências</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Educação</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interests">Interesses</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Certificados</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfólio</a>
+  <div id="app" class="content">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none color-white">Chiu Yong Chang</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item" v-for="(item, index) in data.navbar" :key="index" v-show="index < data.navbar.length - 1">
+            <a class="nav-link js-scroll-trigger" :href="`#${item.link}`">{{item.label}}</a>
           </li>
-      </ul>
-    </div>
-  </nav>
+        </ul>
+      </div>
+      <div class="switch-lang-wrapper">
+        <h5 class="color-white">{{data.navbar[data.navbar.length - 1].label}}</h5>
+        <img src="img/br.png" id="pt-br" class="flag" alt="brazilian" @click="handleSwitchLanguage('portuguese')">
+        <img src="img/usa.png" id="en-us" class="flag" alt="english" style="margin-left: 8px;" @click="handleSwitchLanguage('english')">
+      </div>
+    </nav>
+    <div class="container-fluid p-0">
 
-  <div class="container-fluid p-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center color-white section-style-blue" id="about">
-      <div class="w-100 container-style">
-        <h1 class="mb-0 color-white" >
-          <span class="text-primary">
-            Chiu
-          </span>
-          Yong
-          Chang
-        </h1>
-        <div class="subheading mb-5">25 anos  · (81) 99724-3525 ·
-          yongcchiu@gmail.com
-        </div>
-        <p class="lead mb-5">
-          Bacharel em Sistema de Informação pela Universidade Federal de Pernambuco
-          <br>
-          Idiomas: português, inglês e mandarim
-          <br>
-          Engenheiro de Software
-          <br> 
-          <!--CEO do <a href="https://www.instagram.com/feiralizeapp/" style="font-weight:800">Feiralize</a>-->
-        </p>
-        
-        <div class="lead mb-3">
-          <a title="" href="docs/chiu-cv.pdf" rel="" class="btn-download animated  " style="font-size: 12px; width:175px;" target="">
-            Curriculum-Vitae
-            <i class="fa fa-download"></i>
-          </a>
-        </div>
-        <div class="lead mb-5">
-          <a title="" href="docs/SIG@UFPE.pdf" rel="" class="btn-download animated  " style="font-size: 12px; width:175px;" target="">
-            Histórico Acadêmico
-            <i class="fa fa-download"></i>
-          </a>
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center color-white section-style-blue" id="about-me">
+        <div class="w-100 container-style">
+          <h1 class="mb-0 color-white typing" >
+            <span class="text-primary">
+              Chiu
+            </span>
+            Yong
+            Chang
+          </h1>
+          <div class="subheading mb-5">{{data.about.subtitle}}
+          </div>
+          <p class="lead mb-5" v-html="data.about.description"></p>
+          
+          <div class="lead mb-3">
+            <a title="" href="docs/chiu-cv.pdf" rel="" class="btn-download animated  " style="font-size: 12px; width:175px;" target="">
+              Curriculum-Vitae
+              <i class="fa fa-download"></i>
+            </a>
+          </div>
+          <div class="lead mb-5">
+            <a title="" href="docs/SIG@UFPE.pdf" rel="" class="btn-download animated  " style="font-size: 12px; width:175px;" target="">
+              {{data.about.bottomBtn}}
+              <i class="fa fa-download"></i>
+            </a>
+          </div>
+          
+          <div class="social-icons" >
+            <a href="https://www.linkedin.com/in/chiu-yong-chang-38b714140/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/chiuyong">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/chiu.yc">
+                <i class="fab fa-instagram"></i>
+            </a>
+          </div>        
         </div>
         
-        <div class="social-icons" >
-          <a href="">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/chiuyong">
-            <i class="fab fa-github"></i>
-          </a>
-          <!-- <a href="#">
-            <i class="fab fa-facebook-f"></i>
-          </a> -->
-          <a href="https://www.instagram.com/chiu.yc">
-              <i class="fab fa-instagram"></i>
-          </a>
-        </div>        
-      </div>
-      
-    </section>
+      </section>
 
-    <hr class="m-0">
+      <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center section-style-grey" id="experience">
-      <div class="w-100 container-style">
-        <h2 class="mb-5">Experiência</h2>
+      <section class="resume-section p-3 p-lg-5 section-style-grey" id="experiences">
+        <div class="w-100 container-style">
+          <h2 class="mb-5">{{data.navbar[1].label}}</h2>
+          <div v-for="(item, i) in data.experience" :key="`experience${i}`" v-show="i < data.experience.length - 1">
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+              <div class="resume-content">
+                <h3 class="mb-0">{{item.title}}</h3>
+                <div class="subheading mb-3">{{item.subtitle}}</div>
+                <p align="justify" v-html="item.description"></p>
+              </div>            
+              <div class="resume-date text-md-right">
+                <span class="text-secondary">{{item.date}}</span>
+              </div>
+            </div>
+          </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Desenvolvedor Web (Front-End)</h3>
-            <div class="subheading mb-3">DuAgro</div>
-            <p align="justify">
-              A <a href="https://duagro.agr.br/" style="font-weight:800" class="highlight">DuAgro</a> 
-              é uma plataforma de crédito que financia a compra de insumos agrícolas.
-              <br>
-              Atuação e atividades:
-              <ul>
-                <li>Participei no desenvolvimento da plataforma da fintech</li>
-                <li>Design System & Storybook</li>
-                <li>Cultura Ágil</li>
-                <li>Elaboração de refinamentos e melhorias</li>
-                <li>HTML5, CSS3, Javascript, VueJS, Vuex, ElementIO, Docker</li>
-              </ul>
-            </p>
-          </div>            
-          <div class="resume-date text-md-right">
-            <span class="text-secondary">Abril 2021 - Atual</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Engenheiro de Software</h3>
-            <div class="subheading mb-3">CI&T</div>
-            <p align="justify">
-              A <a href="https://ciandt.com/br/pt-br/home" style="font-weight:800" class="highlight">CI&T</a> 
-              é uma empresa multinacional focada em atender as necessidades dos clientes através da 
-              construção de produtos e soluções digitais, com 27 anos de mercado.
-              <br>
-              Atuação e atividades:
-              <ul>
-                <li>Participei no desenvolvimento da plataforma de investimentos de uma das maiores 
-              corretoras brasileiras de criptomoedas</li>
-                <li>Refinamento técnico</li>
-                <li>TDD & Cultura Ágil</li>
-                <li>Desenvolvimento BFF</li>
-                <li>HTML5, CSS3, Javascript, VueJS, Vuex, Docker</li>
-              </ul>
-            </p>
-          </div>            
-          <div class="resume-date text-md-right">
-            <span class="text-secondary">Out 2021 - Jan 2022</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Desenvolvedor Web (Full-Stack)</h3>
-            <div class="subheading mb-3">TISaúde</div>
-            <p align="justify">
-              A <a href="https://www.tisaude.com/" style="font-weight:800" class="highlight">TISaúde</a> 
-              é uma plataforma clínica para atendimento e relacionamento com pacientes.
-              <br>
-              Atuação e atividades:
-              <ul>
-                <li>Participei no desenvolvimento de uma plataforma de gerenciamento de médicos e pacientes</li>
-                <li>Bitbucket & Jira</li>
-                <li>Cultura Ágil</li>
-                <li>HTML5, CSS3, Javascript, VueJS, Vuex, Quasar, PHP, Laravel, Docker</li>
-              </ul>
-            </p>
-          </div>            
-          <div class="resume-date text-md-right">
-            <span class="text-secondary">Setembro 2020 - Março 2021</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Desenvolvedor Web (Front-End)</h3>
-            <div class="subheading mb-3">Oig Capital</div>
-            <p align="justify">
-              A <a href="https://oig.capital/home-m/" style="font-weight:800" class="highlight">Oig Capital</a> 
-              é uma plataforma com mais de 10 anos de experiência,
-              com uma estrutura para investir em projetos de alto impacto e o know-how para ajudar 
-              investidores a diversificar seus investimentos de forma segura e eficiente.
-              <br>
-              Atuação e atividades:
-              <ul>
-                <li>Participei no desenvolvimento de uma plataforma de investimentos</li>
-                <li>Trello & Github</li>
-                <li>Cultura Ágil</li>
-                <li>HTML5, CSS3, Javascript, VueJS, Vuex, Vuetify</li>
-              </ul>
-            </p>
-          </div>            
-          <div class="resume-date text-md-right">
-            <span class="text-secondary">Março 2020 - Junho 2020</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Desenvolvedor Web (Front-End)</h3>
-            <div class="subheading mb-3">Santenergy (Tild Technology)</div>
-            <p align="justify">
-              O Santenergy (Sistema Avançado de Tecnologia em Energia) é um software de gestão 
-              em nuvem que auxilia as empresas do Mercado Livre de Energia no fluxo e controle de 
-              informações e atividades diárias.
-              <br>
-              Atuação e atividades:
-              <ul>
-                <li>Participei no desenvolvimento de um sistema Web de gerenciamento de 
-              compra e venda de energia importada pelas empresas</li>
-                <li>Jira & Github</li>
-                <li>Cultura Ágil</li>
-                <li>HTML5, CSS3, Javascript, VueJS, Vuex, Vuetify</li>
-              </ul>
-            </p>            
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-secondary">Agosto 2019 - Março 2020</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Desenvolvedor Mobile (Full-Stack)</h3>
-            <div class="subheading mb-3">Feiralize</div>
-            <p align="justify">
-              O <a href="https://www.instagram.com/feiralizeapp/" style="font-weight:800" class="highlight">Feiralize</a> 
-              é uma Startup que está sediada no Centro de Informática da Universidade Federal de Pernambuco
-              e tem como objetivo criar uma plataforma marketplace inovadora para montagem e entrega de 
-              feiras de supermercado de pequeno a médio porte.
-              <br>
-              Atuação e atividades:
-              <ul>
-                <li>Participei no desenvolvimento de uma plataforma e-commerce & delivery de alimentos</li>
-                <li>Jira & Github</li>
-                <li>Cultura Ágil</li>
-                <li>HTML5, CSS3, Javascript, React Native, Redux, Firebase</li>
-              </ul>
-            </p>
-            
-            <!-- <div class="subheading mb-3">Projetos Udemy - React Native & Redux</div>
-            <p align="justify">
-              Para Aperfeiçoar cada vez mais o conhecimento em React Native e 
-              Firebase/Realtime Database, desenvolvi algumas aplicações para 
-              plataforma Android, tais como Lista de Álbums e Gerenciador de Funcionários. 
-              Para construí-los, utilizei a tecnologia JavaScript e apliquei os conceitos 
-              fundamentais do framework React Native, tais como Props, State, Reusabilidade 
-              de Componentes, além de Router-Navigation e Redux a fim de navegar entre 
-              as telas e permitir o acesso ao estado em qualquer componente.              
-              <br>
-              Na Lista de Álbums, o usuário poderá visualizar uma lista de álbums musicais, 
-              contendo informações como o título, artista e uma foto do álbum. Além disso,
-              o usuário poderá comprar um álbum, sendo redirecionado para um site de vendas
-              que contém aquele álbum.
-              <br>
-              No Gerenciador de Funcionários, um gestor poderá realizar a autenticação, ver uma lista
-              de seus funcionários, além de adicionar, editar e deletar um funcionário.
-            </p> -->
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-secondary">Janeiro 2019 - Julho 2019</span>
-          </div>
-        </div>
-
-        <!-- <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Desenvolvedor Web (Full-Stack)</h3>
-            <div class="subheading mb-3">Feiralize</div>
-            <p align="justify">
-              O <a href="https://www.instagram.com/feiralizeapp/" style="font-weight:800" class="highlight">Feiralize</a> 
-              é uma Startup que está sediada no Centro de Informática da Universidade Federal de Pernambuco
-              e tem como objetivo criar uma plataforma marketplace inovadora para montagem e entrega de 
-              feiras de supermercado de pequeno a médio porte.
-              <br>
-              Participei no desenvolvimento de um Sistema de Gerenciamento de Estoque para Supermercado, 
-              de modo que o supermercado possa se autenticar via Web, cadastrar os produtos que queira vender e 
-              suas quantidades, além de poder visualizar uma tabela de produtos já cadastrados na sua loja virtual.
-              Para construir a interface desta aplicação, utilizei as tecnologias HTML 5, CSS 3 e JavaScript, 
-              e também o framework Bootstrap.            
-              Por fim, esse sistema é integrada ao Firebase/Firestore que será responsável por criar a conta do usuário, 
-              armazenar seus dados, retornar o usuário logado, cadastrar os produtos e retorná-los.
-            </p>             
-            <div class="subheading mb-3">Desafio Vue</div>
-            <p align="justify">
-              O Desafio Vue foi proposto para aprender uma nova tecnologia em 2 dias através do 
-              desenvolvimento de uma aplicação Web com três páginas: Login, Cadastro e Buscar Usuário.
-              Para construir a interface desta aplicação, utilizei a tecnologia chamada Vue, 
-              que é um framework do JavaScript, e também o framework Vuetify baseado em Vue. 
-              Além disso, utilizei o Vuex para armazenar os estados localmente, de modo que
-              qualquer componente possa acessá-los.
-              Por fim, essas páginas são interligadas através do conceito de Router Navigation e suas
-              funcionalidades são integradas ao Firebase/Firestore que será responsável por criar 
-              a conta do usuário, armazenar seus dados, retornar o usuário logado e retornar os dados
-              de um determinado usuário caso ele exista.
-            </p>            
-            <div class="subheading mb-3">CHIU-CV</div>
-            <p align="justify">
-              É uma Single Page Web responsivo que tem o objetivo de mostrar informações acerca
-              de minha pessoa, e também servir de portfólio e curriculum-vitae.               
-              Para construir a interface desta aplicação, utilizei as tecnologias HTML 5, CSS 3 e JavaScript, 
-              e também o framework Bootstrap. A hospedagem desta página encontra-se no Firebase.
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-secondary">Junho 2019 - Presente</span>
-          </div>
-        </div> -->
-
-        <!--
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Gerente de Negócios</h3>
-            <div class="subheading mb-3">Feiralize</div>
-            <p align="justify">
-              O Feiralize é uma Startup que está sediada no Centro de Informática da Federal e tem como objetivo 
-              criar um plataforma marketplace inovadora para montagem e entrega de feiras de supermercado de pequeno a médio porte.
-              <br>
-              Sou responsável pela apresentação do Pitch, gerenciamento do projeto e da equipe, prospecção de clientes
-              e vendas, usando SPIN Selling.
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-secondary">Janeiro 2017 - Presente</span>
-          </div>
-        </div>
-        -->
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
             <div class="resume-content">
-              <h3 class="mb-0">Consultor de Negócios</h3>
-              <div class="subheading mb-3">Trainee Empresa Júnior CITi-UFPE</div>
-              <p align="justify">
-                Fui responsável por prestar serviços de consultoria para a Empresa Júnior <a href="http://www.virtuconsultoria.com.br/" class="highlight">Virtù Consultoria Política</a>
-                da UFPE para criação de uma página única web.
-                <br>
-                Atuei no levantamento de requisitos, concebimento da identidade visual do site, aplicação 
-                da metodologia Ágil SCRUM para gerenciamento das atividades e entregas da equipe, suporte
-                ao cliente e finalização da venda através de um contrato.
-              </p>
+              <h3 class="mb-0">{{data.experience[data.experience.length - 1].title}}</h3>
+              <div class="subheading mb-3" v-html="data.experience[data.experience.length - 1].subtitle"></div>
+              <p>{{data.experience[data.experience.length - 1].description}}</p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-secondary">Março 2018 - Junho 2018</span>
+              <span class="text-secondary">{{data.experience[data.experience.length - 1].date}}</span>
             </div>
+          </div>
+
         </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Monitor UFPE</h3>
-            <div class="subheading mb-3">Lógica para Computação</div>
-            <p>Responsável por ministrar aulas de lógica, elaboração de questões, 
-              aplicação de mini-provas e tirar dúvidas.
-            </p>
-            <div class="subheading mb-3">Estatística e Probabilidade para Computação</div>
-            <p>
-              Responsável por ministrar aulas de estatística, elaboração de questões, 
-              aplicação de mini-provas e tirar dúvidas.
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-secondary">Agosto 2014 - Junho 2015</span>
-          </div>
-        </div>
+      </section>
 
-      </div>
+      <hr class="m-0">
 
-    </section>
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+        <div class="w-100 container-style">
+          <h2 class="mb-5">{{data.navbar[2].label}}</h2>
 
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-      <div class="w-100 container-style">
-        <h2 class="mb-5">Educação</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Universidade Federal de Pernambuco</h3>
-            <div class="subheading mb-3">Bacharelado em Sistemas de Informação</div>
-            <p>Concluído em: <span style="font-weight: 800">2020.2</span></p>
-            <p>Média Geral: <span style="font-weight: 800">8,58</span></p>
-            <p>Coeficiente de Rendimento Escolar: <span style="font-weight: 800">8,63</span></p>
-            <p>Recife - PE</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-secondary">Agosto 2018.2 - Dezembro 2020.2</span>
-          </div>
-        </div>
-
-        <!-- <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="resume-content">
-              <h3 class="mb-0">Universidade Federal de Pernambuco</h3>
-              <div class="subheading mb-3">Bacharelado em Ciência da Computação</div>
-              <p>Transferência Interna para o curso de Sistemas de Informação na UFPE</p>
-              <p>Recife - PE</p>
+              <h3 class="mb-0">{{data.education.title}}</h3>
+              <div class="subheading mb-3">{{data.education.subtitle}}</div>
+              <p>{{data.education.end}} <span style="font-weight: 800">2020.2</span></p>
+              <p>{{data.education.overallAverage}} <span style="font-weight: 800">8,58</span></p>
+              <p>{{data.education.cre}} <span style="font-weight: 800">8,63</span></p>
+              <p>{{data.education.location}}</p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-secondary">Agosto 2013.2 - Julho 2018.1</span>
+              <span class="text-secondary">{{data.education.date}}</span>
             </div>
           </div>
-          <br> -->
-        <!--
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Colégio DOM</h3>
-            <div class="subheading mb-3">Terceiro Ano</div>
-            <p>Olinda - PE</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-secondary">Fevereiro 2012 - Dezembro 2012</span>
-          </div>
+
         </div>
-        <br>
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-            <div class="resume-content">
-              <h3 class="mb-0">Colégio Cognitivo</h3>
-              <div class="subheading mb-3">Primeiro e Segundo anos</div>
-              <p>Recife - PE</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-secondary">Fevereiro 2010 - Dezembro 2011</span>
-            </div>
-        </div>
-        -->
-      </div>
-    </section>
+      </section>
 
-    <hr class="m-0">
+      <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center section-style-blue color-white" id="skills">
-      <div class="w-100 container-style">
-        <h2 class="mb-5 color-white">Habilidades</h2>
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center section-style-blue color-white" id="skills">
+        <div class="w-100 container-style">
+          <h2 class="mb-5 color-white">{{data.navbar[3].label}}</h2>
 
-        <div class="subheading mb-3">Linguagens de Programação &amp; Ferramentas</div>
-        <ul class="list-inline dev-icons" style="color: #1B242F">
-          <li class="list-inline-item">
-            <i class="fab fa-html5"></i>
+          <div class="subheading mb-3" v-html="data.skills.subtitle"></div>
+          
+          <ul class="list-inline dev-icons" style="color: #1B242F">
+            <li class="list-inline-item" v-for="(icon, index) in data.skills.icons" :key="`skill${index}`">
+              <i :class="`fab ${icon}`"></i>
+            </li>            
           </li>
-          <li class="list-inline-item">
-            <i class="fab fa-css3-alt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-js-square"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="fab fa-bootstrap"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="fab fa-github-square"></i>
+          </ul>
+          <div class="subheading mb-3">{{data.skills.workflow}}</div>
+          <ul class="fa-ul mb-0">
+            <li v-for="(item, index) in data.skills.workflowList" :key="`workflow${index}`">
+              <i class="fa-li fa fa-check check-green"></i>
+              <span v-html="item"></span>
             </li>
-          <li class="list-inline-item">
-            <i class="fab fa-vuejs"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-java"></i>
-          </li>          
-          <li class="list-inline-item">
-            <i class="fab fa-react"></i>
-          </li>          
-          <li class="list-inline-item">
-            <i class="fab fa-npm"></i>
-          </li>
-          
-        </li>
-        
-        </ul>
-
-        <div class="subheading mb-3">Fluxo de Trabalho</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check check-green"></i>
-            Design Responsivo</li>
-          <li>
-            <i class="fa-li fa fa-check check-green"></i>
-            Teste Multi-plataforma &amp; Debugging</li>
-          <li>
-            <i class="fa-li fa fa-check check-green"></i>
-            Desenvolvimento Ágil &amp; Scrum</li>  
-          <li>
-            <i class="fa-li fa fa-check check-green"></i>
-            Comunicação Inter-Pessoal</li>
-          
-        </ul>
-        <br>
-        <div class="subheading mb-3">Competências Pessoais</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check check-green"></i>
-            Proativo</li>
-          <li>
-            <i class="fa-li fa fa-check check-green"></i>
-            Transparente</li>
-          <li>
-            <i class="fa-li fa fa-check check-green"></i>
-            Autodidata</li>
-          <li>
-            <i class="fa-li fa fa-check check-green"></i>
-            Resiliente</li>
-        </ul>
-
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center section-style-grey" id="interests">
-      <div class="w-100 container-style">
-        <h2 class="mb-5">Interesses</h2>
-        <p align="justify">
-          Atuar na área de TI como desenvolvedor, 
-          fazendo parte de um time com um propósito bem definido e criando soluções para problemas
-          relevantes, de modo que entregue valor ao cliente e impacte positivamente
-          na vida das pessoas. E também poder gerenciar projetos e equipes de alta performance em breve.
-        </p>        
-        <!--
-        <p class="mb-0">
-          Aplicar para os exames de proeficiência inglesa (TOEFL) 
-          e chinesa (HSK) daqui a 2 anos </p>
-        <p class="mb-0">Trabalhar e Estudar fora do Brasil</p>
-        -->
-        <p align="justify" class="mb-0">          
-          Fazer novas amizades
+          </ul>
           <br>
-          Tocar Violão e Cantar
-          <br>  
-          Aprender a cozinhar            
-          <br>
-          Viajar pelo mundo
-        </p>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center section-style" id="awards">
-      <div class="w-100">
-        <h2 class="mb-5">Certificados</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            VueJS - Origamid</li>
-          <li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            React Native &amp; Redux - Udemy</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Desenvolvimento Web Intermediário - CITi</li>          
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Gestão Para Jovens Empreendedores - INTG e TGI</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Líder Coach - MultiMinds</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Oratória - CITi UFPE</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Oratória e Comportamento Empreendedor - SEBRAE</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-             Master in English - CNA</li>  
-          <!--<li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            2<sup>nd</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - James Buchanan High School - Hackathon 2006</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            3<sup>rd</sup>
-            Place - James Buchanan High School - Hackathon 2005</li>
-            -->
-        </ul>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center portfolio section-style-blue" id="portfolio" style="padding-bottom: 50px!important;">
-      <div class="w-100" style="padding-bottom: 5rem!important; padding-top: 5rem!important; max-width: 75rem!important;">
-        <h2 class="mb-5 color-white">Portfólio</h2>
-        <div class="row">
-
-          <div class="col-md-6 col-lg-4">
-            <h4 class="text-center subheading mb-3 color-white" style="font-weight: 800"> Feiralize - App </h4>
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-0">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-                <div class="position-absolute" style="right: 0.8rem; padding-top: 0.5rem;">
-                  <span class="text-light" style="font-size: 60%; font-weight: bold;"> CLIQUE PARA MAIS INFORMAÇÕES </span>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/Portfolio/Feiralize/feiralize.png" alt="" style="height: 100%!important; width: 100%!important;">
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <h4 class="text-center subheading mb-3 color-white" style="font-weight: 800"> Santenergy - WEB </h4>
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-0">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-                <div class="position-absolute" style="right: 0.8rem; padding-top: 0.5rem;">
-                  <span class="text-light" style="font-size: 60%; font-weight: bold;"> CLIQUE PARA MAIS INFORMAÇÕES </span>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/Portfolio/Feiralize/feiralize.png" alt="" style="height: 100%!important; width: 100%!important;">
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <h4 class="text-center subheading mb-3 color-white" style="font-weight: 800"> OIG CAPITAL - WEB </h4>
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-0">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-                <div class="position-absolute" style="right: 0.8rem; padding-top: 0.5rem;">
-                  <span class="text-light" style="font-size: 60%; font-weight: bold;"> CLIQUE PARA MAIS INFORMAÇÕES </span>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/Portfolio/oigcapital.png" alt="" style="height: 100%!important; width: 100%!important;">
-            </a>
-          </div>
-
-          <!--
-          <div class="col-md-6 col-lg-4">
-            <h4 class="text-center subheading mb-3 color-white" style="font-weight: 800"> Feiralize - Gerenciador de Estoque </h4>
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-0">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <div class="position-absolute" style="right: 0.8rem; padding-top: 0.5rem;">
-                <span class="text-light" style="font-size: 60%; font-weight: bold;"> CLIQUE PARA MAIS INFORMAÇÕES </span>
-              </div>
-              <img class="img-fluid" src="img/Portfolio/Feiralize/feiralize.png" alt="" style="height: 100%!important; width: 100%!important;">
-            </a>
-          </div>
-          
-          <div class="col-md-6 col-lg-4">
-            <h4 class="text-center subheading mb-3 color-white" style="font-weight: 800"> Lista de Álbums </h4>
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-0">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <div class="position-absolute" style="right: 0.8rem; padding-top: 0.5rem;">
-                <span class="text-light" style="font-size: 60%; font-weight: bold;"> CLIQUE PARA MAIS INFORMAÇÕES </span>
-              </div>
-              <img class="img-fluid" src="img/Portfolio/react-native.png" alt="" style="height: 100%!important; width: 100%!important;">
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <h4 class="text-center subheading mb-3 color-white" style="font-weight: 800"> Gerenciador de Funcionários </h4>
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-0">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <div class="position-absolute" style="right: 0.8rem; padding-top: 0.5rem;">
-                <span class="text-light" style="font-size: 60%; font-weight: bold;"> CLIQUE PARA MAIS INFORMAÇÕES </span>
-              </div>
-              <img class="img-fluid" src="img/Portfolio/react-native.png" alt="" style="height: 100%!important; width: 100%!important;">
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <h4 class="text-center subheading mb-3 color-white" style="font-weight: 800"> Desafio Vue </h4>
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-0">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <div class="position-absolute" style="right: 0.8rem; padding-top: 0.5rem;">
-                <span class="text-light" style="font-size: 60%; font-weight: bold;"> CLIQUE PARA MAIS INFORMAÇÕES </span>
-              </div>
-              <img class="img-fluid" src="img/Portfolio/vuejs.png" alt="" style="height: 100%!important; width: 100%!important;">
-            </a>
-          </div>
-          -->
-          
+          <div class="subheading mb-3">{{data.skills.softSkills}}</div>
+          <ul class="fa-ul mb-0">
+            <li v-for="(skill, index) in data.skills.softSkillsList" :key="`softSkill${index}`">
+              <i class="fa-li fa fa-check check-green"></i>
+              <span v-html="skill"></span>
+            </li>
+          </ul>
 
         </div>
-      </div>
-    </section>
+      </section>
 
-    <p align="center" class="footer-style">
-        Copyright © 2019 Desenvolvido por cyc. Todos os direitos reservados.
-    </p>
+      <hr class="m-0">
 
-     <!-- Portfolio Modal 1 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-0">
-      <div class="portfolio-modal-dialog bg-primary color-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center section-style-grey" id="interests">
+        <div class="w-100 container-style">
+          <h2 class="mb-5">{{data.navbar[4].label}}</h2>
+          <p align="justify">
+            {{data.interests.subtitle}}
+          </p>                
+          <p align="justify" class="mb-0" v-html="data.interests.list"></p>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center section-style" id="certifications">
+        <div class="w-100">
+          <h2 class="mb-5">{{data.navbar[5].label}}</h2>
+          <ul class="fa-ul mb-0">
+            <li v-for="(item, index) in data.certifications.list" :key="`certification${index}`">
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              <span v-html="item.label" :class="{ 'font-weight-bold certification-option': item.link }" @click="handleCertificationClick(item)"></span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center portfolio section-style-blue" id="portfolio" style="padding-bottom: 50px!important;">
+        <div class="w-100" style="padding-bottom: 5rem!important; padding-top: 5rem!important; max-width: 75rem!important;">
+          <h2 class="mb-5 color-white">{{data.navbar[6].label}}</h2>
           <div class="row">
-            <div class="col-lg-6 mx-auto">
-              <div class="wrapper">
-                <input checked type=radio name="slider" id="slide1" />
-                <input type=radio name="slider" id="slide2" />
-                <input type=radio name="slider" id="slide3" />
-                <input type=radio name="slider" id="slide4" />
-              
-                <div class="slider-wrapper">
-                  <div class=inner>
-                    <article>
-                      <div class="info top-left">
-                        <h3>Login</h3></div>
-                      <img src="img/Portfolio/feiralize-login.jpeg" />
-                    </article>
-              
-                    <article>
-                      <div class="info bottom-right">
-                        <h3>Lista de Produtos</h3></div>
-                      <img src="img/Portfolio/feiralize-lista.jpeg" />
-                    </article>
-              
-                    <article>
-                      <div class="info bottom-left">
-                        <h3>Histórico de Compras</h3></div>
-                      <img src="img/Portfolio/feiralize-historico.jpeg" />
-                    </article>
-              
-                    <article>
-                      <div class="info top-right">
-                        <h3>Lista de Pedidos</h3></div>
-                      <img src="img/Portfolio/feiralize-supermercado.jpeg" />
-                    </article>
-         
+
+            <div class="col-md-6 col-lg-4">
+              <h4 class="text-center subheading mb-3 color-white" style="font-weight: 800"> Feiralize - App </h4>
+              <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-0">
+                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i class="fa fa-search-plus fa-3x"></i>
                   </div>
-                  <!-- .inner -->
+                  <div class="position-absolute" style="right: 0.8rem; padding-top: 0.5rem;">
+                    <span class="text-light" style="font-size: 60%; font-weight: bold;"> CLIQUE PARA MAIS INFORMAÇÕES </span>
+                  </div>
                 </div>
-                <!-- .slider-wrapper -->
-              
-                <div class="slider-prev-next-control">
-                  <label for=slide1></label>
-                  <label for=slide2></label>
-                  <label for=slide3></label>
-                  <label for=slide4></label>
+                <img class="img-fluid" src="img/Portfolio/Feiralize/feiralize.png" alt="" style="height: 100%!important; width: 100%!important;">
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <h4 class="text-center subheading mb-3 color-white" style="font-weight: 800"> Santenergy - WEB </h4>
+              <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-0">
+                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </div>
+                  <div class="position-absolute" style="right: 0.8rem; padding-top: 0.5rem;">
+                    <span class="text-light" style="font-size: 60%; font-weight: bold;"> CLIQUE PARA MAIS INFORMAÇÕES </span>
+                  </div>
                 </div>
-                <!-- .slider-prev-next-control -->
-              
-                <div class="slider-dot-control">
-                  <label for=slide1></label>
-                  <label for=slide2></label>
-                  <label for=slide3></label>
-                  <label for=slide4></label>
+                <img class="img-fluid" src="img/Portfolio/Feiralize/feiralize.png" alt="" style="height: 100%!important; width: 100%!important;">
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <h4 class="text-center subheading mb-3 color-white" style="font-weight: 800"> OIG CAPITAL - WEB </h4>
+              <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-0">
+                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </div>
+                  <div class="position-absolute" style="right: 0.8rem; padding-top: 0.5rem;">
+                    <span class="text-light" style="font-size: 60%; font-weight: bold;"> CLIQUE PARA MAIS INFORMAÇÕES </span>
+                  </div>
                 </div>
-                <!-- .slider-dot-control -->
+                <img class="img-fluid" src="img/Portfolio/oigcapital.png" alt="" style="height: 100%!important; width: 100%!important;">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <p align="center" class="footer-style">
+          Copyright © 2023 Desenvolvido por cyc. Todos os direitos reservados.
+      </p>
+
+      <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-0">
+        <div class="portfolio-modal-dialog bg-primary color-white">
+          <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+            <i class="fa fa-3x fa-times"></i>
+          </a>
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-lg-6 mx-auto">
+                <div class="wrapper">
+                  <input checked type=radio name="slider" id="slide1" />
+                  <input type=radio name="slider" id="slide2" />
+                  <input type=radio name="slider" id="slide3" />
+                  <input type=radio name="slider" id="slide4" />
+                
+                  <div class="slider-wrapper">
+                    <div class=inner>
+                      <article>
+                        <div class="info top-left">
+                          <h3>Login</h3></div>
+                        <img src="img/Portfolio/feiralize-login.jpeg" />
+                      </article>
+                
+                      <article>
+                        <div class="info bottom-right">
+                          <h3>Lista de Produtos</h3></div>
+                        <img src="img/Portfolio/feiralize-lista.jpeg" />
+                      </article>
+                
+                      <article>
+                        <div class="info bottom-left">
+                          <h3>Histórico de Compras</h3></div>
+                        <img src="img/Portfolio/feiralize-historico.jpeg" />
+                      </article>
+                
+                      <article>
+                        <div class="info top-right">
+                          <h3>Lista de Pedidos</h3></div>
+                        <img src="img/Portfolio/feiralize-supermercado.jpeg" />
+                      </article>
+          
+                    </div>
+                    <!-- .inner -->
+                  </div>
+                  <!-- .slider-wrapper -->
+                
+                  <div class="slider-prev-next-control">
+                    <label for=slide1></label>
+                    <label for=slide2></label>
+                    <label for=slide3></label>
+                    <label for=slide4></label>
+                  </div>
+                  <!-- .slider-prev-next-control -->
+                
+                  <div class="slider-dot-control">
+                    <label for=slide1></label>
+                    <label for=slide2></label>
+                    <label for=slide3></label>
+                    <label for=slide4></label>
+                  </div>
+                  <!-- .slider-dot-control -->
+                </div>
+                <p class="mb-5" style="text-align: justify;">                
+                  <b>Plataforma:</b> Android <br>
+                  <b>Servidor:</b> Firebase/Firestore <br>
+                  <b>Ferramentas:</b> VSCode, Github <br>                
+                  <b>Linguagem:</b> JavaScript <br>
+                  <b>Framework:</b> React Native <br>                                
+                </p>
+                <a class="btn-download portfolio-modal-dismiss" href="#">
+                  <i class="fa fa-close"></i>
+                  Fechar</a>
               </div>
-              <p class="mb-5" style="text-align: justify;">                
-                <b>Plataforma:</b> Android <br>
-                <b>Servidor:</b> Firebase/Firestore <br>
-                <b>Ferramentas:</b> VSCode, Github <br>                
-                <b>Linguagem:</b> JavaScript <br>
-                <b>Framework:</b> React Native <br>                                
-              </p>
-              <a class="btn-download portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Fechar</a>
             </div>
           </div>
         </div>
@@ -844,10 +382,39 @@
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
   <!-- Custom scripts for this template -->
+  <script src="js/data.json"></script>
   <script src="js/main.min.js"></script>
   <script src="js/portfolio.min.js"></script>
+  <script type="module">
+    import json from './js/data.json' assert { type: 'json' }
+    const { createApp } = Vue
+    createApp({
+      data() {
+        return {
+          data: null,
+          defaultLanguage: 'portuguese'
+        }
+      },
+      methods: {
+        handleSwitchLanguage(lang) {
+          this.defaultLanguage = lang
+          this.setData()
+        },
+        setData() {          
+          this.data = json[this.defaultLanguage]
+        },
+        handleCertificationClick(item) {
+          if(item.link) window.open(item.link, '_blank', 'noreferrer');
+        }
+      },
+      created() {
+        this.setData()
+      },
+    }).mount('#app')
+  </script>
 
 </body>
 

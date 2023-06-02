@@ -1,0 +1,405 @@
+{
+  "portuguese": {
+    "navbar": [
+      {
+        "label": "Sobre mim",
+        "link": "about-me"
+      },
+      {
+        "label": "Experiências",
+        "link": "experiences"
+      },
+      {
+        "label": "Educação",
+        "link": "education"
+      },
+      {
+        "label": "Habilidades",
+        "link": "skills"
+      },
+      {
+        "label": "Interesses",
+        "link": "interests"
+      },
+      {
+        "label": "Certificados",
+        "link": "certifications"
+      },
+      {
+        "label": "Portfólio",
+        "link": "portfolio"
+      },
+      {
+        "label": "Alterar idioma",
+        "link": ""
+      }
+    ],
+    "about": {
+      "subtitle": "Desenvolvedor Frontend · Javascript | Typescript | Vuejs | HTML5 | CSS3 | Sass | Bootstrap",
+      "description": "Bacharel em Sistemas de Informação pela Universidade Federal de Pernambuco <br> Com experiência profissional em Gerenciamento de Projetos e Empreendedorismo em TI <br> Orientado a soluções e metas, e instrutor focado em ajudar as pessoas a começarem a programar <br>",
+      "bottomBtn": "Histórico Acadêmico"
+    },
+    "experience": [
+      {
+        "title": "Desenvolvedor Web Frontend - Senior",
+        "subtitle": "Vert-Capital",
+        "link": "https://duagro.agr.br/",
+        "description": "Techfin que atua no mercado de capitais com foco em securitização. <br> Atuação e atividades: <ul><li>Participei no desenvolvimento da plataforma securitizadora</li><li>Implementação de sites ESG e Antifraudes</li><li>Design System & Storybook</li><li>Cultura Ágil</li><li>HTML5, CSS3, Typescript, Javascript, VueJS, VueJS 3, Vuex, Vue-Router, ElementUI, Docker, Bootstrap, Sass </li></ul>",
+        "date": "Outubro 2022 - Atual"
+      },
+      {
+        "title": "Desenvolvedor Web Frontend - Pleno",
+        "subtitle": "DuAgro",
+        "link": "https://duagro.agr.br/",
+        "description": "Plataforma de crédito que financia a compra de insumos agrícolas.<br>Atuação e atividades:<ul><li>Participei no desenvolvimento da plataforma da fintech</li>                  <li>Design System & Storybook</li><li>Cultura Ágil</li><li>Elaboração de refinamentos e melhorias</li><li>HTML5, CSS3, Javascript, VueJS, Vuex, ElementUI, Docker</li></ul>",
+        "date": "Abril 2021 - Outubro 2022"
+      },
+      {
+        "title": "Engenheiro de Software - Pleno",
+        "subtitle": "CI&T",
+        "link": "https://ciandt.com/br/pt-br/home",
+        "description": "Empresa multinacional focada em atender as necessidades dos clientes através da construção de produtos e soluções digitais, com 27 anos de mercado.<br>Atuação e atividades:<ul><li>Participei no desenvolvimento da plataforma de investimentos de uma das maiores corretoras brasileiras de criptomoedas</li><li>Refinamento técnico</li><li>TDD & Cultura Ágil</li><li>Desenvolvimento BFF</li><li>HTML5, CSS3, Javascript, VueJS, Vuex, Docker</li></ul>",
+        "date": "Outubro 2021 - Janeiro 2022"
+      },
+      {
+        "title": "Desenvolvedor Web Full-Stack - Pleno",
+        "subtitle": "TISaúde",
+        "link": "https://www.tisaude.com/",
+        "description": "Plataforma clínica para atendimento e relacionamento com pacientes.<br>Atuação e atividades:<ul><li>Participei no desenvolvimento de uma plataforma de gerenciamento de médicos e pacientes</li><li>Bitbucket & Jira</li><li>Cultura Ágil</li><li>HTML5, CSS3, Javascript, VueJS, Vuex, Quasar, PHP, Laravel, Docker</li></ul>",
+        "date": "Setembro 2020 - Março 2021"
+      },
+      {
+        "title": "Desenvolvedor Web Frontend - Junior",
+        "subtitle": "Oig Capital",
+        "link": "https://oig.capital/home-m/",
+        "description": "Plataforma com mais de 10 anos de experiência, com uma estrutura para investir em projetos de alto impacto e o know-how para ajudar investidores a diversificar seus investimentos de forma segura e eficiente.<br>Atuação e atividades:<ul><li>Participei no desenvolvimento de uma plataforma de investimentos</li><li>Trello & Github</li><li>Cultura Ágil</li><li>HTML5, CSS3, Javascript, VueJS, Vuex, Vuetify</li></ul>",
+        "date": "Março 2020 - Junho 2020"
+      },
+      {
+        "title": "Desenvolvedor Web Frontend - Junior",
+        "subtitle": "Santenergy Tild Technology",
+        "link": "",
+        "description": "Software de gestão em nuvem que auxilia as empresas do Mercado Livre de Energia no fluxo e controle de informações e atividades diárias.<br>Atuação e atividades:<ul><li>Participei no desenvolvimento de um sistema Web de gerenciamento de compra e venda de energia importada pelas empresas</li><li>Jira & Github</li><li>Cultura Ágil</li><li>HTML5, CSS3, Javascript, VueJS, Vuex, Vuetify</li></ul>",
+        "date": "Agosto 2019 - Março 2020"
+      },
+      {
+        "title": "Desenvolvedor Mobile FullStack - Junior",
+        "subtitle": "Feiralize",
+        "link": "https://www.instagram.com/feiralizeapp/",
+        "description": "Startup que está sediada no Centro de Informática da Universidade Federal de Pernambuco e tem como objetivo criar uma plataforma marketplace inovadora para montagem e entrega de feiras de supermercado de pequeno a médio porte.<br>Atuação e atividades:<ul><li>Participei no desenvolvimento de uma plataforma e-commerce & delivery de alimentos</li>        <li>Jira & Github</li><li>Cultura Ágil</li><li>HTML5, CSS3, Javascript, React Native, Redux, Firebase</li></ul>",
+        "date": "Janeiro 2019 - Julho 2019"
+      },
+      {
+        "title": "Consultor de Negócios",
+        "subtitle": "Trainee Empresa Júnior CITi-UFPE",
+        "link": "http://www.virtuconsultoria.com.br/",
+        "description": "Fui responsável por prestar serviços de consultoria para a Empresa Júnior Virtù Consultoria Política da UFPE para criação de uma página única web.<br>Atuei no levantamento de requisitos, concebimento da identidade visual do site, aplicação da metodologia Ágil SCRUM para gerenciamento das atividades e entregas da equipe, suporte ao cliente e finalização da venda através de um contrato.",
+        "date": "Março 2018 - Junho 2018"
+      },
+      {
+        "title": "Monitor UFPE",
+        "subtitle": "Banco de Dados<br>Lógica para Computação<br>Estatística e Probabilidade para Computação",
+        "link": "",
+        "description": "Responsável por ministrar aulas de lógica, elaboração de questões, aplicação de mini-provas e tirar dúvidas.",
+        "date": "Agosto 2020 - Dezembro 2020"
+      }
+    ],
+    "education": {
+      "title": "Universidade Federal de Pernambuco",
+      "subtitle": "Bacharelado em Sistemas de Informação",
+      "end": "Concluído em:",
+      "overallAverage": "Média Geral:",
+      "cre": "Coeficiente de Rendimento Escolar:",
+      "location": "Recife - PE",
+      "date": "Agosto 2018.2 - Dezembro 2020.2"
+    },
+    "skills": {
+      "subtitle": "Linguagens de Programação &amp; Ferramentas",
+      "icons": [
+        "fa-html5",
+        "fa-css3-alt",
+        "fa-js-square",
+        "fa-bootstrap",
+        "fa-github-square",
+        "fa-vuejs",
+        "fa-java",
+        "fa-react",
+        "fa-npm"
+      ],
+      "workflow": "Fluxo de trabalho",
+      "workflowList": [
+        "Design Responsivo",
+        "Teste Multi-plataforma &amp; Debugging",
+        "Desenvolvimento Ágil &amp; Scrum",
+        "Comunicação Inter-Pessoal"
+      ],
+      "softSkills": "Competências Pessoais",
+      "softSkillsList": [
+        "Proativo",
+        "Transparente",
+        "Autodidata",
+        "Resiliente"
+      ]
+    },
+    "interests": {
+      "subtitle": "Como desenvolvedor frontend, tenho interesse em criar a melhor experiência por meio de interfaces de usuário de aplicativos da Web, dando vida a um conceito com tecnologias de frontend.",
+      "list": "Ter experiências gastronômicas<br>Descobrir novos lugares<br>Conectar com pessoas"
+    },
+    "certifications": {
+      "list": [
+        {
+          "label": "Front-End Web UI Frameworks and Tools: Bootstrap 4 - Hong Kong University of Science and Technology",
+          "link": "https://coursera.org/verify/62EMA55BXUUC/"
+        },
+        {
+          "label": "JavaScript Completo ES6 - Origamid",
+          "link": "https://origamid.com/certificate/927c2496/"
+        },
+        {
+          "label": "Web Development Bootcamp 2023 - Dr. Angela Yu",
+          "link": "https://www.udemy.com/certificate/UC-5c8738a8-ffcd-40c3-ba8b-98fe6e9b156e/"
+        },
+        {
+          "label": "Vue.js 2 Completo - Origamid",
+          "link": "https://www.origamid.com/certificate/dcf41493/"
+        },
+        {
+          "label": "React Native &amp; Redux - Udemy",
+          "link": "https://www.udemy.com/certificate/UC-0FGFV205/"
+        },
+        {
+          "label": "Desenvolvimento Web Intermediário - CITi",
+          "link": ""
+        },
+        {
+          "label": "Gestão Para Jovens Empreendedores - INTG e TGI",
+          "link": ""
+        },
+        {
+          "label": "Líder Coach - MultiMinds",
+          "link": ""
+        },
+        {
+          "label": "Oratória - CITi UFPE",
+          "link": ""
+        },
+        {
+          "label": "Oratória e Comportamento Empreendedor - SEBRAE",
+          "link": ""
+        },
+        {
+          "label": "Master in English - CNA",
+          "link": ""
+        }
+      ]
+    },
+    "portfolio": {
+      "subtitle": "Desenvolvedor Frontend · Javascript | Typescript | Vuejs | HTML5 | CSS3 | Sass | Bootstrap",
+      "description": "Bacharel em Sistemas de Informação pela Universidade Federal de Pernambuco <br> Com experiência profissional em Gerenciamento de Projetos e Empreendedorismo em TI <br> Orientado a soluções e metas, e instrutor focado em ajudar as pessoas a começarem a programar <br>",
+      "bottomBtn": "Histórico Acadêmico"
+    }
+  },
+  "english": {
+    "navbar": [
+      {
+        "label": "About me",
+        "link": "about-me"
+      },
+      {
+        "label": "Experiences",
+        "link": "experiences"
+      },
+      {
+        "label": "Education",
+        "link": "education"
+      },
+      {
+        "label": "Skills",
+        "link": "skills"
+      },
+      {
+        "label": "Interests",
+        "link": "interests"
+      },
+      {
+        "label": "Certifications",
+        "link": "certifications"
+      },
+      {
+        "label": "Portfolio",
+        "link": "portfolio"
+      },
+      {
+        "label": "Change language",
+        "link": ""
+      }
+    ],
+    "about": {
+      "subtitle": "Frontend Developer · Javascript | Typescript | Vuejs | HTML5 | CSS3 | Sass | Bootstrap",
+      "description": "Bachelor's Degree in Information Systems at Universidade Federal de Pernambuco (UFPE)<br>Professional background in Project Management and IT Entrepreneurship<br>Goal oriented & instructor focused on helping people start programming",
+      "bottomBtn": "Academic Record"
+    },
+    "experience": [
+      {
+        "title": "Frontend Web Developer- Senior",
+        "subtitle": "Vert-Capital",
+        "link": "https://duagro.agr.br/",
+        "description": "Fintech that operates in the capital market with a focus on securitization. <br> Performance and activities: <ul><li>I participated in the development of the securitization platform</li><li>Deploy of ESG and Antifraud websites</li><li>Design System & Storybook</li><li>Agile Culture</li><li>HTML5, CSS3, Typescript, Javascript, VueJS, VueJS 3, Vuex, Vue-Router, ElementUI, Docker, Bootstrap, Sass </li></ul>",
+        "date": "October 2022 - Current"
+      },
+      {
+        "title": "Frontend Web Developer - Mid Level",
+        "subtitle": "DuAgro",
+        "link": "https://duagro.agr.br/",
+        "description": "Credit platform that finances the purchase of agricultural inputs.<br>Performance and activities:<ul><li>I participated in the development of the fintech platform</li><li>Design System & Storybook</li><li>Agile Culture</li><li>Elaboration of refinements and improvements</li><li>HTML5, CSS3, Javascript, VueJS, Vuex, ElementUI, Docker</li></ul>",
+        "date": "April 2021 - October 2022"
+      },
+      {
+        "title": "Software Engineer - Mid Level",
+        "subtitle": "CI&T",
+        "link": "https://ciandt.com/br/pt-br/home",
+        "description": "Multinational company focused on meeting customer needs by building digital products and solutions with 27 years in the market.<br>Performance and activities:<ul><li>I participated in the development of the investment platform of one of the largest Brazilian cryptocurrency brokers</li><li>Technical refinement</li><li>TDD & Agile Culture</li><li>BFF Development</li><li>HTML5, CSS3, Javascript, VueJS, Vuex, Docker</li></ul>",
+        "date": "October 2021 - January 2022"
+      },
+      {
+        "title": "Full Stack Web Developer - Mid Level",
+        "subtitle": "TISaúde",
+        "link": "https://www.tisaude.com/",
+        "description": "Clinical platform for care and relationship with patients.<br>Performance and activities:<ul><li>Participated in the development of a doctor and patient management platform</li><li>Bitbucket & Jira</li><li>Agile Culture</li><li>HTML5, CSS3, Javascript, VueJS, Vuex, Quasar, PHP, Laravel, Docker</li></ul>",
+        "date": "September 2020 - March 2021"
+      },
+      {
+        "title": "Frontend Web Developer - Junior",
+        "subtitle": "Oig Capital",
+        "link": "https://oig.capital/home-m/",
+        "description": "Platform with more than 10 years of experience, with a structure to invest in high-impact projects and the know-how to help investors diversify their investments safely and efficiently.<br>Performance and activities:<ul><li>I participated in the development of an investment platform</li><li>Trello & Github</li><li>Agile Culture</li><li>HTML5, CSS3, Javascript, VueJS, Vuex, Vuetify</li></ul>",
+        "date": "March 2020 - June 2020"
+      },
+      {
+        "title": "Frontend Web Developer - Junior",
+        "subtitle": "Santenergy Tild Technology",
+        "link": "",
+        "description": "Cloud management software that helps companies in the free energy market in the flow and control of information and daily activities.<br>Performance and activities:<ul><li>I participated in the development of a Web system for managing the purchase and sale of energy imported by companies</li><li>Jira & Github</li><li>Agile Culture</li><li>HTML5, CSS3, Javascript, VueJS, Vuex, Vuetify</li></ul>",
+        "date": "August 2019 - March 2020"
+      },
+      {
+        "title": "Full Stack Mobile Developer - Junior",
+        "subtitle": "Feiralize",
+        "link": "https://www.instagram.com/feiralizeapp/",
+        "description": "Startup that is headquartered at the Informatics Center of the Federal University of Pernambuco and aims to create an innovative marketplace platform for assembly and delivery of small to medium-sized supermarket fairs.<br>Performance and activities:<ul><li>I participated in the development of an e-commerce & food delivery platform</li><li>Jira & Github</li><li>Agile Culture</li><li>HTML5, CSS3, Javascript, React Native, Redux, Firebase</li></ul>",
+        "date": "January 2019 - July 2019"
+      },
+      {
+        "title": "Business consultant",
+        "subtitle": "Junior Company Trainee CITi-UFPE",
+        "link": "http://www.virtuconsultoria.com.br/",
+        "description": "I was responsible for providing consulting services to the Junior Company Virtù Consultoria Política at UFPE to create a single web page.<br>I worked in gathering requirements, designing the website's visual identity, applying the Agile SCRUM methodology to manage the team's activities and deliveries, customer support and finalizing the sale through a contract.",
+        "date": "March 2018 - June 2018"
+      },
+      {
+        "title": "University Monitor UFPE",
+        "subtitle": "Database<br>Logic for Computing<br>Statistics and Probability for Computing",
+        "link": "",
+        "description": "Responsible for teaching logic classes, preparing questions, applying mini-tests and answering questions.",
+        "date": "August 2020 - December 2020"
+      }
+    ],
+    "education": {
+      "title": "Universidade Federal de Pernambuco",
+      "subtitle": "Bachelor's Degree in Information Systems",
+      "end": "Graduated in:",
+      "overallAverage": "Overall Average:",
+      "cre": "School Achievement Coefficient:",
+      "location": "Recife - PE",
+      "date": "August 2018.2 - December 2020.2"
+    },
+    "skills": {
+      "subtitle": "Programming Languages &amp; Tools",
+      "icons": [
+        "fa-html5",
+        "fa-brands fa-css3-alt",
+        "fa-brands fa-node",
+        "fa-brands fa-square-js",
+        "fa-brands fa-figma",
+        "fa-bootstrap",
+        "fa-github-square",
+        "fa-brands fa-vuejs",
+        "fa-brands fa-jira",
+        "fa-brands fa-git",
+        "fa-react",
+        "fa-npm"
+      ],
+      "workflow": "Workflow",
+      "workflowList": [
+        "Responsive Design",
+        "Multiplatform Test &amp; Debugging",
+        "Agile culture &amp; Scrum",
+        "Interpersonal comunication"
+      ],
+      "softSkills": "Soft skills",
+      "softSkillsList": [
+        "Proactive",
+        "Transparent",
+        "Self-taught",
+        "Resilient"
+      ]
+    },
+    "interests": {
+      "subtitle": "As a frontend developer, I am interested in creating the best experience through web application user interfaces, bringing a concept to life with frontend technologies.",
+      "list": "Have gastronomic experiences<br>Discover new places<br>Connect with people"
+    },
+    "certifications": {
+      "list": [
+        {
+          "label": "Front-End Web UI Frameworks and Tools: Bootstrap 4 - Hong Kong University of Science and Technology",
+          "link": "https://coursera.org/verify/62EMA55BXUUC/"
+        },
+        {
+          "label": "Complete JavaScript ES6 - Origamid",
+          "link": "https://origamid.com/certificate/927c2496/"
+        },
+        {
+          "label": "Web Development Bootcamp 2023 - Dr. Angela Yu",
+          "link": "https://www.udemy.com/certificate/UC-5c8738a8-ffcd-40c3-ba8b-98fe6e9b156e/"
+        },
+        {
+          "label": "Complete Vue.js 2 - Origamid",
+          "link": "https://www.origamid.com/certificate/dcf41493/"
+        },
+        {
+          "label": "React Native &amp; Redux - Udemy",
+          "link": "https://www.udemy.com/certificate/UC-0FGFV205/"
+        },
+        {
+          "label": "Web Development Mid Level - CITi",
+          "link": ""
+        },
+        {
+          "label": "Management for Young Entrepreneurs - INTG e TGI",
+          "link": ""
+        },
+        {
+          "label": "Leader Coach - MultiMinds",
+          "link": ""
+        },
+        {
+          "label": "Oratory - CITi UFPE",
+          "link": ""
+        },
+        {
+          "label": "Oratory and Entrepreneurial Behavior - SEBRAE",
+          "link": ""
+        },
+        {
+          "label": "Master in English - CNA",
+          "link": ""
+        }
+      ]
+    },
+    "portfolio": {
+      "subtitle": "Desenvolvedor Frontend · Javascript | Typescript | Vuejs | HTML5 | CSS3 | Sass | Bootstrap",
+      "description": "Bacharel em Sistemas de Informação pela Universidade Federal de Pernambuco <br> Com experiência profissional em Gerenciamento de Projetos e Empreendedorismo em TI <br> Orientado a soluções e metas, e instrutor focado em ajudar as pessoas a começarem a programar <br>",
+      "bottomBtn": "Histórico Acadêmico"
+    }
+  }
+}
