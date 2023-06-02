@@ -26,10 +26,6 @@
         "link": "certifications"
       },
       {
-        "label": "Portfólio",
-        "link": "portfolio"
-      },
-      {
         "label": "Alterar idioma",
         "link": ""
       }
@@ -224,10 +220,6 @@
       {
         "label": "Certifications",
         "link": "certifications"
-      },
-      {
-        "label": "Portfolio",
-        "link": "portfolio"
       },
       {
         "label": "Change language",

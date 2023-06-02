@@ -90,9 +90,9 @@
             <a href="https://github.com/chiuyong">
               <i class="fab fa-github"></i>
             </a>
-            <a href="https://www.instagram.com/chiu.yc">
+            <!-- <a href="https://www.instagram.com/chiu.yc">
                 <i class="fab fa-instagram"></i>
-            </a>
+            </a> -->
           </div>        
         </div>
         
@@ -215,7 +215,7 @@
 
       <hr class="m-0">
 
-      <section class="resume-section p-3 p-lg-5 d-flex align-items-center portfolio section-style-blue" id="portfolio" style="padding-bottom: 50px!important;">
+      <!-- <section class="resume-section p-3 p-lg-5 d-flex align-items-center portfolio section-style-blue" id="portfolio" style="padding-bottom: 50px!important;">
         <div class="w-100" style="padding-bottom: 5rem!important; padding-top: 5rem!important; max-width: 75rem!important;">
           <h2 class="mb-5 color-white">{{data.navbar[6].label}}</h2>
           <div class="row">
@@ -267,14 +267,14 @@
 
           </div>
         </div>
-      </section>
+      </section> -->
 
       <p align="center" class="footer-style">
-          Copyright © 2023 Desenvolvido por cyc. Todos os direitos reservados.
+          Copyright © {{currentYear}} Desenvolvido por cyc. Todos os direitos reservados.
       </p>
 
       <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-0">
+      <!-- <div class="portfolio-modal mfp-hide" id="portfolio-modal-0">
         <div class="portfolio-modal-dialog bg-primary color-white">
           <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
             <i class="fa fa-3x fa-times"></i>
@@ -315,9 +315,7 @@
                       </article>
           
                     </div>
-                    <!-- .inner -->
                   </div>
-                  <!-- .slider-wrapper -->
                 
                   <div class="slider-prev-next-control">
                     <label for=slide1></label>
@@ -325,15 +323,14 @@
                     <label for=slide3></label>
                     <label for=slide4></label>
                   </div>
-                  <!-- .slider-prev-next-control -->
-                
+
                   <div class="slider-dot-control">
                     <label for=slide1></label>
                     <label for=slide2></label>
                     <label for=slide3></label>
                     <label for=slide4></label>
                   </div>
-                  <!-- .slider-dot-control -->
+                  
                 </div>
                 <p class="mb-5" style="text-align: justify;">                
                   <b>Plataforma:</b> Android <br>
@@ -349,7 +346,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -395,7 +392,8 @@
       data() {
         return {
           data: null,
-          defaultLanguage: 'portuguese'
+          defaultLanguage: '',
+          currentYear: new Date().getFullYear()
         }
       },
       methods: {
@@ -408,9 +406,15 @@
         },
         handleCertificationClick(item) {
           if(item.link) window.open(item.link, '_blank', 'noreferrer');
+        },
+        setDefaultLanguage() {
+          const lang = navigator.language || navigator.userLanguage;
+          if(lang === 'pt-BR') this.defaultLanguage = 'portuguese'
+          else this.defaultLanguage = 'english'
         }
       },
       created() {
+        this.setDefaultLanguage()
         this.setData()
       },
     }).mount('#app')
