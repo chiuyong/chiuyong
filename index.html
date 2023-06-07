@@ -103,11 +103,11 @@
       <section class="resume-section p-3 p-lg-5 section-style-grey" id="experiences">
         <div class="w-100 container-style">
           <h2 class="mb-5">{{data.navbar[1].label}}</h2>
-          <div v-for="(item, i) in data.experience" :key="`experience${i}`" v-show="i < data.experience.length - 1">
+          <div v-for="(item, i) in data.experience" :key="`experience${i}`">
             <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
               <div class="resume-content">
                 <h3 class="mb-0">{{item.title}}</h3>
-                <div class="subheading mb-3">{{item.subtitle}}</div>
+                <div class="subheading mb-3" v-html="item.subtitle">{{item.subtitle}}</div>
                 <p align="justify" v-html="item.description"></p>
               </div>            
               <div class="resume-date text-md-right">
@@ -115,18 +115,6 @@
               </div>
             </div>
           </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-            <div class="resume-content">
-              <h3 class="mb-0">{{data.experience[data.experience.length - 1].title}}</h3>
-              <div class="subheading mb-3" v-html="data.experience[data.experience.length - 1].subtitle"></div>
-              <p>{{data.experience[data.experience.length - 1].description}}</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-secondary">{{data.experience[data.experience.length - 1].date}}</span>
-            </div>
-          </div>
-
         </div>
 
       </section>
@@ -392,7 +380,7 @@
       data() {
         return {
           data: null,
-          defaultLanguage: '',
+          defaultLanguage: 'portuguese',
           currentYear: new Date().getFullYear()
         }
       },
