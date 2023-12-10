@@ -84,15 +84,12 @@
           </div>
           
           <div class="social-icons" >
-            <a href="https://www.linkedin.com/in/chiu-yong-chang-38b714140/">
+            <a href="https://www.linkedin.com/in/chiuyc/">
               <i class="fab fa-linkedin-in"></i>
             </a>
             <a href="https://github.com/chiuyong">
               <i class="fab fa-github"></i>
             </a>
-            <!-- <a href="https://www.instagram.com/chiu.yc">
-                <i class="fab fa-instagram"></i>
-            </a> -->
           </div>        
         </div>
         
@@ -105,14 +102,19 @@
           <h2 class="mb-5">{{data.navbar[1].label}}</h2>
           <div v-for="(item, i) in data.experience" :key="`experience${i}`">
             <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-              <div class="resume-content">
-                <h3 class="mb-0">{{item.title}}</h3>
-                <div class="subheading mb-3" v-html="item.subtitle">{{item.subtitle}}</div>
-                <p align="justify" v-html="item.description"></p>
+              <div class="w-100">
+                <div class="resume-header d-flex justify-content-between align-items-center">
+                  <h3 class="mb-0">{{item.title}}</h3>
+                  <span class="resume-location"><strong>{{item.location}}</strong></span>
+                </div>
+                <div class="resume-subheading mb-3 d-flex justify-content-between align-items-center">
+                  <span>{{item.subtitle}}</span>
+                  <span class="resume-date"><em>{{item.date}}</em></span>
+                </div>
+                <div class="resume-content">
+                  <p align="justify" v-html="item.description"></p>
+                </div>
               </div>            
-              <div class="resume-date text-md-right">
-                <span class="text-secondary">{{item.date}}</span>
-              </div>
             </div>
           </div>
         </div>
@@ -126,16 +128,20 @@
           <h2 class="mb-5">{{data.navbar[2].label}}</h2>
 
           <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="resume-content">
-              <h3 class="mb-0">{{data.education.title}}</h3>
-              <div class="subheading mb-3">{{data.education.subtitle}}</div>
-              <p>{{data.education.end}} <span style="font-weight: 800">2020.2</span></p>
-              <p>{{data.education.overallAverage}} <span style="font-weight: 800">8,58</span></p>
-              <p>{{data.education.cre}} <span style="font-weight: 800">8,63</span></p>
-              <p>{{data.education.location}}</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-secondary">{{data.education.date}}</span>
+            <div class="w-100">
+              <div class="resume-header d-flex justify-content-between align-items-center">
+                <h3 class="mb-0">{{data.education.title}}</h3>
+                <span class="resume-location"><strong>{{data.education.location}}</strong></span>
+              </div>
+              <div class="resume-subheading mb-3 d-flex justify-content-between align-items-center">
+                <span>{{data.education.subtitle}}</span>
+                <span class="resume-date"><em>{{data.education.date}}</em></span>
+              </div>
+              <div class="resume-content">
+                <ul>
+                  <li>{{data.education.overallAverage}} <span style="font-weight: 800">8.58 / 10.00</span></li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -180,9 +186,6 @@
       <section class="resume-section p-3 p-lg-5 d-flex align-items-center section-style-grey" id="interests">
         <div class="w-100 container-style">
           <h2 class="mb-5">{{data.navbar[4].label}}</h2>
-          <p align="justify">
-            {{data.interests.subtitle}}
-          </p>                
           <p align="justify" class="mb-0" v-html="data.interests.list"></p>
         </div>
       </section>

@@ -31,58 +31,65 @@
       }
     ],
     "about": {
-      "subtitle": "Desenvolvedor Frontend · Javascript | Typescript | Vuejs | HTML5 | CSS3 | Sass | Bootstrap",
-      "description": "Bacharel em Sistemas de Informação pela Universidade Federal de Pernambuco <br> Com experiência profissional em Gerenciamento de Projetos e Empreendedorismo em TI <br> Orientado a soluções e metas, e instrutor focado em ajudar as pessoas a começarem a programar <br>",
+      "subtitle": "Engenheiro de Software · VueJS | ReactJS | NodeJS | JavaScript | Typescript",
+      "description": "Bacharel em Sistemas de Informação pela Universidade Federal de Pernambuco <br> Instrutor dedicado a ajudar pessoas a começarem a programar <br> Orientado a soluções e metas <br>",
       "bottomBtn": "Histórico Acadêmico"
     },
     "experience": [
       {
-        "title": "Desenvolvedor Frontend Senior",
-        "subtitle": "Vert-Capital",
+        "title": "Vert-Capital",
+        "subtitle": "Engenheiro de Software Sênior",
+        "location": "São Paulo - Brasil",
         "link": "https://duagro.agr.br/",
-        "description": "Techfin que atua no mercado de capitais com foco em securitização. <br> Atuação e atividades: <ul><li>Participei no desenvolvimento da plataforma securitizadora</li><li>Implementação de sites ESG e Antifraudes</li><li>Design System & Storybook</li><li>Cultura Ágil</li><li>HTML5, CSS3, Typescript, Javascript, VueJS, VueJS 3, Vuex, Vue-Router, ElementUI, Docker, Bootstrap, Sass </li></ul>",
+        "description": "<ul><li>Implementei dashboards avançados e relatórios, diminuindo o tempo de análise de dados em 30%, proporcionando tomadas de decisão mais precisas e oportunas por meio da criação de interfaces de gestão intuitivas e eficientes, com dados unificados</li><li>Revolucionei a gestão de folha de pagamento ao implementar uma funcionalidade interna, eliminando a dependência do Excel, alcançando um aumento excepcional de 6x na eficiência departamental e reduzindo erros em 50%, impactando positivamente os departamentos de gestão financeira e contabilidade</li><li>Lancei o site institucional ESG, apresentando um total de $200 milhões em emissões (social and green bonds), comunicando efetivamente o compromisso da empresa com a responsabilidade social e ambiental, aumentando a transparência e a confiança entre os stakeholders rurais</li><li>Implantei um site institucional antifraude para prevenir proativamente golpes financeiros, conscientizando todos os clientes sobre as melhores práticas de segurança, enquanto a empresa supervisiona uma carteira de $2 bilhões</li></ul>",
         "date": "Outubro 2022 - Atual"
       },
       {
-        "title": "Desenvolvedor Frontend Pleno",
-        "subtitle": "DuAgro",
+        "title": "DuAgro",
+        "subtitle": "Engenheiro de Software Pleno",
+        "location": "São Paulo - Brasil",
         "link": "https://duagro.agr.br/",
-        "description": "Plataforma de crédito que financia a compra de insumos agrícolas.<br>Atuação e atividades:<ul><li>Participei no desenvolvimento da plataforma da fintech</li>                  <li>Design System & Storybook</li><li>Cultura Ágil</li><li>Elaboração de refinamentos e melhorias</li><li>HTML5, CSS3, Javascript, VueJS, Vuex, ElementUI, Docker</li></ul>",
+        "description": "<ul><li>Liderei a implementação de um design system robusto e storybook, garantindo uma padronização de interfaces de usuário consistentes e otimizando significativamente os processos de desenvolvimento, resultando em uma notável redução de 50% nos prazos de entrega de atividades</li><li>Implementei uma experiência do usuário focada em acessibilidade, aprimorando a inclusão digital para mais de 4.000 clientes produtores rurais com familiaridade digital limitada por meio da interação intuitiva na plataforma</li><li>Coordenei a implementação de uma funcionalidade primordial para captura e processamento direto de imagens pela câmera do dispositivo do usuário, aprimorando o processo de embarque para uma experiência mais amigável e alcançando um aumento significativo de 20% nas conclusões bem-sucedidas do onboarding</li><li>Assumi a responsabilidade pelas atividades de manutenção e refatoração de código legado, melhorando a legibilidade do código e reduzindo o débito técnico em 25%, promovendo um ambiente de desenvolvimento mais confiável e estável</li></ul>",
         "date": "Abril 2021 - Outubro 2022"
       },
       {
-        "title": "Desenvolvedor Full-Stack Pleno",
-        "subtitle": "TISaúde",
+        "title": "TISaúde",
+        "subtitle": "Engenheiro de Software Pleno",
+        "location": "Recife - Brasil",
         "link": "https://www.tisaude.com/",
-        "description": "Plataforma clínica para atendimento e relacionamento com pacientes.<br>Atuação e atividades:<ul><li>Participei no desenvolvimento de uma plataforma de gerenciamento de médicos e pacientes</li><li>Bitbucket & Jira</li><li>Cultura Ágil</li><li>HTML5, CSS3, Javascript, VueJS, Vuex, Quasar, PHP, Laravel, Docker</li></ul>",
+        "description": "<ul><li>Desacoplei os módulos de front-end e back-end e implementei uma plataforma de telemedicina do início, reformulando a aplicação de produção existente, oferecendo suporte crucial de saúde para mais de 5 milhões de pacientes ativos durante a pandemia de COVID-19</li><li>Implementei uma relevante funcionalidade de gerenciamento de filas para totens, otimizando o fluxo de pacientes e aprimorando a eficiência operacional para mais de 25.000 profissionais de saúde em consultórios médicos</li><li>Atuei como palestrante sobre a metodologia ágil Scrum para mais de 50 colaboradores, fomentando uma cultura de adaptabilidade e inovação em todas as equipes internas</li></ul>",
         "date": "Setembro 2020 - Março 2021"
       },
       {
-        "title": "Desenvolvedor Frontend Júnior",
-        "subtitle": "Oig Capital",
+        "title": "Oig Capital",
+        "subtitle": "Engenheiro de Software Júnior",
+        "location": "Teresina - Brasil",
         "link": "https://oig.capital/home-m/",
-        "description": "Plataforma com mais de 10 anos de experiência, com uma estrutura para investir em projetos de alto impacto e o know-how para ajudar investidores a diversificar seus investimentos de forma segura e eficiente.<br>Atuação e atividades:<ul><li>Participei no desenvolvimento de uma plataforma de investimentos</li><li>Trello & Github</li><li>Cultura Ágil</li><li>HTML5, CSS3, Javascript, VueJS, Vuex, Vuetify</li></ul>",
+        "description": "<ul><li>Contribuí para o desenvolvimento de uma plataforma robusta de trading do início, integrando dashboards avançados e relatórios, atendendo clientes em mais de 100 países ao redor do mundo</li></ul>",
         "date": "Março 2020 - Junho 2020"
       },
       {
-        "title": "Desenvolvedor Frontend Júnior",
-        "subtitle": "Santenergy Tild Technology",
+        "title": "Tild Technology",
+        "subtitle": "Engenheiro de Software Estagiário",
+        "location": "Recife - Brasil",
         "link": "",
-        "description": "Software de gestão em nuvem que auxilia as empresas do Mercado Livre de Energia no fluxo e controle de informações e atividades diárias.<br>Atuação e atividades:<ul><li>Participei no desenvolvimento de um sistema Web de gerenciamento de compra e venda de energia importada pelas empresas</li><li>Jira & Github</li><li>Cultura Ágil</li><li>HTML5, CSS3, Javascript, VueJS, Vuex, Vuetify</li></ul>",
+        "description": "<ul><li>Colaborei no desenvolvimento de uma plataforma de trading de energia e gestão de riscos, resultando em uma redução de 40% no consumo de energia para os clientes, proporcionando economias substanciais de custos</li></ul>",
         "date": "Agosto 2019 - Março 2020"
       },
       {
-        "title": "Monitor Universitário",
-        "subtitle": "Banco de Dados<br>Lógica para Computação<br>Estatística e Probabilidade para Computação",
+        "title": "Universidade Federal de Pernambuco",
+        "subtitle": "Monitor Universitário",
+        "location": "Recife - Brasil",
         "link": "",
-        "description": "<ul><li>Responsável por ministrar aulas de lógica</li><li>Elaboração de questões</li><li>Aplicação de mini-provas</li><li>Tirar dúvidas</li></ul>",
+        "description": "<ul><li>Monitor das disciplinas de Banco de Dados, Lógica para Computação e Estatística e Probabilidade para Computação</li><li>Ministrei aulas, supervisionei exames e auxiliei alunos e professores</li></ul>",
         "date": "Agosto 2019 - Dezembro 2019"
       },
       {
-        "title": "Consultor de Negócios",
-        "subtitle": "Trainee Empresa Júnior CITi-UFPE",
+        "title": "Empresa Júnior CITi-UFPE",
+        "subtitle": "Trainee",
+        "location": "Recife - Brasil",
         "link": "http://www.virtuconsultoria.com.br/",
-        "description": "Fui responsável por prestar serviços de consultoria para a Empresa Júnior Virtù Consultoria Política da UFPE para criação de uma página única web.<br><ul><li>Atuei no levantamento de requisitos para concebimento da identidade visual do site</li><li>Aplicação da metodologia Ágil SCRUM para gerenciamento das atividades e entregas da equipe</li><li>Suporte ao cliente</li><li>Finalização da venda através de um contrato</li></ul>",
+        "description": "<ul><li>Prestei serviços de consultoria para a Empresa Júnior Virtù Consultoria Política da UFPE para criação de uma página única web.</li><li>Atuei no levantamento de requisitos para concebimento da identidade visual do site</li><li>Apliquei a metodologia Ágil Scrum para gerenciamento das atividades e entregas da equipe</li><li>Forneci suporte excepcional ao cliente e elaborei um contrato para finalização da venda</li></ul>",
         "date": "Março 2018 - Junho 2018"
       }
     ],
@@ -104,28 +111,41 @@
         "fa-bootstrap",
         "fa-github-square",
         "fa-vuejs",
-        "fa-java",
         "fa-react",
-        "fa-npm"
+        "fa-sass",
+        "fa-bitbucket",
+        "fa-jira",
+        "fa-node-js"
       ],
-      "workflow": "Fluxo de trabalho",
+      "workflow": "Hard skills",
       "workflowList": [
-        "Design Responsivo",
-        "Teste Multi-plataforma &amp; Debugging",
-        "Desenvolvimento Ágil &amp; Scrum",
-        "Comunicação Inter-Pessoal"
+        "Agile Methodologies: Scrum, Kanban",
+        "Back-end Development: Express.js, MongoDB, Postgres, Node.js, SQL, RESTful API",
+        "CSS Frameworks: Bootstrap, Tailwind CSS",
+        "Design Patterns & Principles: Design Patterns, SOLID, Object-Oriented Programming",
+        "Front-end Development: CSS 3, HTML 5, Javascript, React.js React Hooks, Vue.js 2, Vue.js 3",
+        "Git & Version Control: Bitbucket, Github, Git, GitFlow",
+        "State Management: Vuex, Redux",
+        "Styling: Styled Components, Sass, BEM CSS",
+        "Testing: Jest, Unit Testing",
+        "UI Libraries: Element UI, Vuetify, Quasar, ShadcnUI",
+        "Utilities & Tools: Jira, Prettier / ESLint, Storybook",
+        "Version Control: Bitbucket, Github, Git, GitFlow",
+        "Web Development: Next.js, Remix, SEO Optimization, Responsive Design"
       ],
-      "softSkills": "Competências Pessoais",
+      "softSkills": "Soft Skills",
       "softSkillsList": [
-        "Proativo",
-        "Transparente",
-        "Autodidata",
-        "Resiliente"
+        "Adaptabilidade: ajusto-me positivamente a desafios e contratempos",
+        "Analítico: proficiente em analisar situações e encontrar soluções eficazes para tomada de decisão",
+        "Colaborativo: eficiente em trabalho em equipe",
+        "Proativo: antecipo-me as necessidades",
+        "Transparente: estabeleço uma comunicação transparente, garantindo clareza e compreensão",
+        "Autodidata: aprendizado e aprimoramento de habilidades de forma independente"
       ]
     },
     "interests": {
       "subtitle": "Como desenvolvedor frontend, tenho interesse em criar a melhor experiência por meio de interfaces de usuário de aplicativos da Web, dando vida a um conceito com tecnologias de frontend.",
-      "list": "<ul><li>Ter experiências gastronômicas</li><li>Descobrir novos lugares</li><li>Conectar com pessoas</li>"
+      "list": "<ul><li>Bem-estar e Fitness</li><li>Criar conexões</li><li>Entusiasta de viagens</li><li>Instrutor de programação</li><li>Tech Lead</li></ul>"
     },
     "certifications": {
       "list": [
@@ -213,64 +233,71 @@
       }
     ],
     "about": {
-      "subtitle": "Frontend Developer · Javascript | Typescript | Vuejs | HTML5 | CSS3 | Sass | Bootstrap",
-      "description": "Bachelor's Degree in Information Systems at Universidade Federal de Pernambuco (UFPE)<br>Professional background in Project Management and IT Entrepreneurship<br>Goal oriented & instructor focused on helping people start programming",
+      "subtitle": "Software Engineer · VueJS | ReactJS | NodeJS | JavaScript | Typescript",
+      "description": "Bachelor of Science in Information Systems at Universidade Federal de Pernambuco (UFPE)<br>Instructor committed to helping people start programming<br>Solution-focused and goal-oriented",
       "bottomBtn": "Academic Record"
     },
     "experience": [
       {
-        "title": "Senior Frontend Developer",
-        "subtitle": "Vert-Capital",
+        "title": "Vert-Capital",
+        "subtitle": "Senior Frontend Developer",
+        "location": "São Paulo - Brasil",
         "link": "https://duagro.agr.br/",
-        "description": "I worked for a Techfin company operating in the capital market, specializing in securitization. During my time there, I actively contributed to the development of the securitization platform and played a key role in implementing ESG and Anti-fraud websites. Additionally, I have experience working with Design Systems and Storybook, embracing an Agile culture. My technical skills include HTML5, CSS3, Typescript, JavaScript, Vue.js, Vue.js 3, Vuex, Vue-Router, ElementUI, Docker, Bootstrap, and Sass.",
+        "description": "<ul><li>Implemented advanced dashboards and reports, reducing data analysis time by 30%, leading to more precise and timely decision-making through the creation of intuitive, efficient management interfaces with unified data</li><li>Revolutionized payroll management by implementing an internal feature, eliminating Excel dependence, achieving an exceptional 6x increase in departmental efficiency and reduced errors by 50%, positively impacting the finance management and accounting departments</li><li>Launched the ESG institutional website, showcasing a total of $200 millions emissions (social and green bonds), effectively communicating the company’s commitment to social and environmental responsibility, enhancing transparency and trust among rural stakeholders</li><li>Deployed an institutional anti-fraud website to proactively prevent financial scams, educated all clients on security best practices, while overseeing a $2 billion portfolio</li></ul>",
         "date": "October 2022 - Current"
       },
       {
-        "title": "Mid-level Frontend Developer",
-        "subtitle": "DuAgro",
+        "title": "DuAgro",
+        "subtitle": "Software Engineer",
+        "location": "São Paulo - Brasil",
         "link": "https://duagro.agr.br/",
-        "description": "I have actively contributed to the development of a fintech's platform that provides credit for agricultural input purchases. During this project, I played a key role in implementing the Design System and Storybook, fostering an Agile culture, and continuously working on refinements and improvements. My technical skills in this endeavor include HTML5, CSS3, JavaScript, Vue.js, Vuex, ElementUI, and Docker.",
+        "description": "<ul><li>Championed the implementation of a robust design system and storybook, ensuring consistent user interfaces and significantly streamlining development processes, leading to a notable 50% reduction in task delivery timelines</li><li>Implemented an accessibility-focused user experience, enhancing digital inclusivity for more than 4,000 rural producer clients with limited digital familiarity through an intuitive platform interaction</li><li>Led the implementation of a key feature for direct image capture and processing through the user’s device camera, enhancing the onboarding process for a friendlier experience and achieving a significant 20% increase in successful onboarding completions</li><li>Took charge of maintenance and refactoring activities for legacy code, enhancing code readability and reducing technical debt by 25%, promoting a more reliable and stable development environment</li></ul>",
         "date": "April 2021 - October 2022"
       },
       {
-        "title": "Mid-level Full-Stack Developer",
-        "subtitle": "TISaúde",
+        "title": "TISaúde",
+        "subtitle": "Software Engineer",
+        "location": "Recife - Brasil",
         "link": "https://www.tisaude.com/",
-        "description": "I have participated in the development of a clinical platform for patient care and engagement. Specifically, I worked on a platform that facilitated the management of doctors and patients. Additionally, I performed refactoring of PHP projects using Laravel and also have experience as a speaker on Agile Scrum methodology. Throughout the project, I utilized tools such as Bitbucket and Jira to ensure efficient collaboration and tracking of tasks. Embracing an Agile culture, I contributed to delivering high-quality software through iterative and collaborative development processes. In terms of my technical expertise, I have experience with HTML5, CSS3, JavaScript, Vue.js, Vuex, Quasar, PHP, Laravel, and Docker.",
+        "description": "<ul><li>Separated front-end and back-end modules and built a telemedicine platform from scratch by overhauling the existing production application, providing vital healthcare support to over 5 million active patients during the challenges of the COVID-19 pandemic</li><li>Introduced a queue management key feature for totems, optimizing the patient flow and streamlining operational efficiency for over 25,000 healthcare professionals clients in medical offices</li><li>Served as a speaker on agile scrum methodology for over 50 collaborators, fostering a culture of adaptability and innovation across all internal teams</li></ul>",
         "date": "September 2020 - March 2021"
       },
       {
-        "title": "Junior Frontend Developer",
-        "subtitle": "Oig Capital",
+        "title": "Oig Capital",
+        "subtitle": "Junior Software Engineer",
+        "location": "Teresina - Brasil",
         "link": "https://oig.capital/home-m/",
-        "description": "I have participated in the development of an investment platform with over 10 years of experience, offering a robust infrastructure for investing in high-impact projects and the expertise to assist investors in diversifying their investments securely and efficiently. During this project, I contributed to the development of an investment platform, utilizing tools such as Trello and GitHub for effective project management and collaboration. Embracing an Agile culture, I fostered iterative development processes to ensure the delivery of a high-quality product. In terms of my technical skills, I am proficient in HTML5, CSS3, JavaScript, Vue.js, Vuex, and Vuetify.",
+        "description": "<ul><li>Contributed to the development of a robust trading platform from scratch, incorporating advanced dashboards and reports, and serving clients in over 100 countries around the world</li></ul>",
         "date": "March 2020 - June 2020"
       },
       {
-        "title": "Junior Frontend Developer",
-        "subtitle": "Santenergy Tild Technology",
+        "title": "Tild Technology",
+        "subtitle": "Software Engineer Intern",
+        "location": "Recife - Brasil",
         "link": "",
-        "description": "I have actively contributed to the development of a cloud-based management software that assists companies in the Free Energy Market with information flow and daily activity control. Specifically, I participated in the development of a web-based system for managing the purchase and sale of imported energy by businesses. During this project, I utilized tools such as Jira and Github for efficient project management and collaboration. Embracing an Agile culture, I fostered iterative development processes to ensure the delivery of a high-quality system. In terms of my technical skills, I am proficient in HTML5, CSS3, JavaScript, VueJS, Vuex, and Vuetify.",
+        "description": "<ul><li>Collaborated in the development of a trading energy and risk management platform, resulting in 40% reduction in energy consumption for clients, leading to substantial cost savings</li></ul>",
         "date": "August 2019 - March 2020"
       },
       {
-        "title": "University Monitor",
-        "subtitle": "Database<br>Logic for Computing<br>Statistics and Probability for Computing",
+        "title": "Universidade Federal de Pernambuco",
+        "subtitle": "University Monitor",
+        "location": "São Paulo - Brasil",
         "link": "",
-        "description": "<ul><li>Responsible for teaching logic classes</li><li>Creation of questions</li><li>Administration of mini-tests</li><li>Providing assistance and clarification for doubts</li>",
+        "description": "<ul><li>University monitor for the courses of Database, Logic for Computing, and Statistics and Probability for Computing</li><li>Led training sessions, supervised exams and assisted students and professors</li></ul>",
         "date": "August 2019 - December 2019"
       },
       {
-        "title": "Business consultant",
-        "subtitle": "Junior Company Trainee CITi-UFPE",
+        "title": "Junior Company CITi-UFPE",
+        "subtitle": "Trainee",
+        "location": "São Paulo - Brasil",
         "link": "http://www.virtuconsultoria.com.br/",
-        "description": "I was responsible for providing consulting services to Virtù Consultoria Política, the Junior Enterprise at UFPE, for the creation of a single web page. I worked on gathering requirements for the visual identity of the website, applying the Agile SCRUM methodology for managing team activities and deliverables. Additionally, I provided customer support and finalized the sale through a contract.",
+        "description": "<ul><li>Provided consulting services to Virtù Consultoria Política for the creation of a single web page</li><li>Gathered requirements for the visual identity of the website</li><li>Managed activities and deliverables in a small team by applying Agile Scrum methodology</li><li>Provided customer support and finalized the sale through a contract</li></ul>",
         "date": "March 2018 - June 2018"
       }
     ],
     "education": {
       "title": "Universidade Federal de Pernambuco",
-      "subtitle": "Bachelor of Information Systems",
+      "subtitle": "Bachelor of Science in Information Systems",
       "end": "Graduated in:",
       "overallAverage": "Overall GPA:",
       "cre": "School Performance Coefficient:",
@@ -281,36 +308,46 @@
       "subtitle": "Programming Languages &amp; Tools",
       "icons": [
         "fa-html5",
-        "fa-brands fa-css3-alt",
-        "fa-brands fa-node",
-        "fa-brands fa-square-js",
-        "fa-brands fa-figma",
+        "fa-css3-alt",
+        "fa-js-square",
         "fa-bootstrap",
         "fa-github-square",
-        "fa-brands fa-vuejs",
-        "fa-brands fa-jira",
-        "fa-brands fa-git",
+        "fa-vuejs",
         "fa-react",
-        "fa-npm"
+        "fa-sass",
+        "fa-bitbucket",
+        "fa-jira",
+        "fa-node-js"
       ],
-      "workflow": "Workflow",
+      "workflow": "Hard skills",
       "workflowList": [
-        "Responsive Design",
-        "Multiplatform Test &amp; Debugging",
-        "Agile culture &amp; Scrum",
-        "Interpersonal comunication"
+        "Agile Methodologies: Scrum, Kanban",
+        "Back-end Development: Express.js, MongoDB, Postgres, Node.js, SQL, RESTful API",
+        "CSS Frameworks: Bootstrap, Tailwind CSS",
+        "Design Patterns & Principles: Design Patterns, SOLID, Object-Oriented Programming",
+        "Front-end Development: CSS 3, HTML 5, Javascript, React.js React Hooks, Vue.js 2, Vue.js 3",
+        "Git & Version Control: Bitbucket, Github, Git, GitFlow",
+        "State Management: Vuex, Redux",
+        "Styling: Styled Components, Sass, BEM CSS",
+        "Testing: Jest, Unit Testing",
+        "UI Libraries: Element UI, Vuetify, Quasar, ShadcnUI",
+        "Utilities & Tools: Jira, Prettier / ESLint, Storybook",
+        "Version Control: Bitbucket, Github, Git, GitFlow",
+        "Web Development: Next.js, Remix, SEO Optimization, Responsive Design"
       ],
       "softSkills": "Soft skills",
       "softSkillsList": [
-        "Proactive",
-        "Transparent",
-        "Self-taught",
-        "Resilient"
+        "Adaptable: Positive adjustment to challenges and setbacks",
+        "Analytical: Proficient in analyzing situations and finding effective solutions for decision-making",
+        "Collaborative: Effective teamwork",
+        "Initiative-Taker: Proactively takes charge and anticipates needs",
+        "Open Communicator: Establishes transparent communication to ensure clarity and understanding",
+        "Self-Directed Learner: Eager and effective in independent learning and skill enhancement"
       ]
     },
     "interests": {
       "subtitle": "As a frontend developer, I am interested in creating the best experience through web application user interfaces, bringing a concept to life with frontend technologies.",
-      "list": "<ul><li>Have gastronomic experiences</li><li>Discover new places</li><li>Connect with people</li>"
+      "list": "<ul><li>Connectivity: Building and fostering real relationships</li><li>Fitness and Wellness: Commitment to personal health and well-being through regular workouts</li><li>Programming Instruction: Passionate about sharing knowledge and instructing others in programming</li><li>Tech Leadership:  Guiding and shaping technology teams</li><li>Travel Enthusiast: Exploring new places and experiencing diverse cultures</li></ul>"
     },
     "certifications": {
       "list": [

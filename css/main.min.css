@@ -43,7 +43,7 @@ p.lead {
   font-size: 1.15rem;
   font-weight: 400;
 }
-.subheading {
+.resume-subheading {
   text-transform: uppercase;
   font-weight: 500;
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
@@ -51,6 +51,25 @@ p.lead {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.5rem;
 }
+
+.resume-location {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.5rem;
+}
+
+.resume-date {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.375rem;
+}
+
 .social-icons a {
   display: inline-block;
   height: 3.5rem;
@@ -144,16 +163,16 @@ section.resume-section {
   max-width: 100%;
   /*max-width: 75rem;*/
 }
-section.resume-section .resume-item .resume-date {
+/* section.resume-section .resume-item .resume-date {
   min-width: none;
-}
+} */
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
   }
-  section.resume-section .resume-item .resume-date {
+  /* section.resume-section .resume-item .resume-date {
     min-width: 18rem;
-  }
+  } */
 }
 @media (min-width: 992px) {
   section.resume-section {
